@@ -39,8 +39,8 @@ namespace Summator
         [Test]
         public void Test_Average_TwoPositiveNumbers()
         {
-            int actual = Summator.Average(new int[] { 5, 7 });
-            int expected = 6;
+            double actual = Summator.Average(new long[] { 5, 7 });
+            double expected = 6;
             Assert.That(expected == actual);
         }
 
@@ -62,24 +62,24 @@ namespace Summator
         [Test]
         public void Test_Average_ThreeOddNumbers()
         {
-            int actual = Summator.Average(new int[] { 45, 55, 65 });
-            int expected = 55;
+            double actual = Summator.Average(new long[] { 45, 55, 65 });
+            double expected = 55;
             Assert.That(expected == actual);
         }
         [Test]
         public void Test_Average_FiveEvenNumbers()
         {
-            int actual = Summator.Average(new int[] { 20, 30, 40, 50, 60 });
-            int expected = 40;
+            double actual = Summator.Average(new long[] { 20, 30, 40, 50, 60 });
+            double expected = 40;
             Assert.That(expected == actual);
         }
-        //
-        //[Test]
-        //public void Test_Average_OddAndEvenNumbers()
-        //{
-            //int actual = Summator.Average(new int[] { 5, 6 });
-            //double expected = 5.5;
-            //Assert.That(expected == actual);
-        //}
+        
+        [Test]
+        public void Test_Average_OddAndEvenNumbers()
+        {
+            double actual = Summator.Average(new long[] { 5, 6 });
+            double expected = 5.5;
+            Assert.That(expected == actual);
+        }
     }
 }
